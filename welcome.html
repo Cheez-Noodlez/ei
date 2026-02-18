@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4CAF50, #2e7d32);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: blue;
+            color: #2e7d32;
+        }
+        button:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>You have successfully logged in.</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        function logout() {
+            window.location.href = "index.html"; // change if your login file has a different name
+        }
+    </script>
+</body>
+</html>
